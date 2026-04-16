@@ -1,0 +1,41 @@
+version: "3.9"
+
+services:
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: l1_rabbitmq
+    ports:
+      - "5672:5672"    # AMQP protocol
+      - "15672:15672"  # Management UI → http://localhost:15672 (guest/guest)
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  postgres:
+    image: postgres:15
+    container_name: l1_postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER:     user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB:       l1support
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d l1support"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  rabbitmq_data:
+  postgres_data:
