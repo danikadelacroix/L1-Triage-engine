@@ -1,7 +1,6 @@
 """
 jira_client.py — creates Jira issues via the Jira REST API v3.
 
-Replaces the empty notify_officials_node stub from the original repo.
 """
 
 import requests

@@ -6,9 +6,6 @@ Run this ONCE before starting the application to:
   2. Seed the PostgreSQL database schema
   3. Smoke-test the LLM with an IT support-flavoured sentiment check
 
-Original repo used this to test citizen grievance sentiment against a
-government portal. We've rewritten it entirely for the IT/HR helpdesk context.
-
 Usage:
     python first_script.py
 """

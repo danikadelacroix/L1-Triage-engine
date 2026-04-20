@@ -1,5 +1,5 @@
 """
-app.py — FastAPI server replacing the original Streamlit app.
+app.py — FastAPI server replacing the earlier Streamlit app.
 
 Exposes two endpoints:
   POST /slack/events   — receives Slack event subscriptions (mentions, DMs)

@@ -1,0 +1,441 @@
+NovaTech Solutions Pvt. Ltd.
+Employee IT & HR Knowledge Base
+Official Policy Manual for Internal Use
+Version 4.2  |  Effective: January 1, 2026  |  Revised: March 15, 2026
+DOCUMENT SCOPE
+This document serves as the authoritative reference manual for all NovaTech Solutions employees. It covers IT systems, helpdesk procedures, access management, HR policies, leave entitlements, payroll processes, grievance handling, and escalation paths. All employees are expected to be familiar with the policies in this manual.
+This knowledge base is the primary corpus used by the NovaTech L1 Support Engine (NTSE) for automated query resolution. Policies are tagged with unique IDs for retrieval.
+
+Owner	People Operations & IT Infrastructure — helpdesk@novatech.in
+
+Applicability	All full-time employees, contractors, and interns at NovaTech Solutions Pvt. Ltd.
+
+Confidentiality	INTERNAL USE ONLY — Do not share outside the organization
+ 
+Section 1: IT Helpdesk & Support
+1.1 Helpdesk Overview
+Policy ID: IT-001  |  Category: IT Support  |  Last Revised: March 2025
+The NovaTech IT Helpdesk provides Level 1, Level 2, and Level 3 technical support to all employees. The primary point of contact for IT issues is the internal support portal at support.novatech.in or via email at helpdesk@novatech.in.
+
+Helpdesk Hours	Monday – Friday: 8:00 AM – 9:00 PM IST | Saturday: 9:00 AM – 5:00 PM IST | Sunday & Holidays: On-call only
+
+Emergency IT	For critical outages affecting production systems: +91-80-4567-8901 (24x7)
+
+Ticket Severity Levels
+Severity	Definition	SLA Response Time
+SEV-1 Critical	Production system down, data loss risk, security breach	15 minutes
+SEV-2 High	Major feature unavailable, >10 users impacted	2 hours
+SEV-3 Medium	Single user impacted, workaround available	8 business hours
+SEV-4 Low	General query, how-to question, minor inconvenience	24 business hours
+
+1.2 How to Raise an IT Ticket
+Policy ID: IT-002  |  Category: IT Support  |  Last Revised: March 2025
+Employees must raise tickets through the official support portal. Walk-in requests are accepted only at the IT Help Desk located at Floor 2, Block B of the Bengaluru HQ. Remote employees must use the portal or email.
+
+Steps to Raise a Ticket
+1.	Navigate to support.novatech.in and log in using your NovaTech SSO credentials.
+2.	Click 'New Ticket' and select the relevant category (Hardware / Software / Network / Access / Other).
+3.	Fill in the Title, Description, and Severity Level. Attach screenshots if applicable.
+4.	Click Submit. You will receive a ticket ID via email (format: NT-XXXXXX) within 5 minutes.
+5.	Track your ticket status under 'My Tickets'. You will be notified at each status change.
+
+Important: Do not email individual IT team members directly. All tickets must go through the portal to ensure proper SLA tracking.
+
+1.3 Password Reset Procedure
+Policy ID: IT-003  |  Category: Access Management  |  Last Revised: March 2025
+Employees can reset their NovaTech domain password through the self-service portal without raising a ticket. This includes passwords for Windows login, Outlook, and all SSO-connected applications.
+
+Self-Service Password Reset (SSPR)
+6.	Visit sso.novatech.in/reset from any device.
+7.	Enter your registered employee email (format: firstname.lastname@novatech.in).
+8.	Complete identity verification via OTP sent to your registered mobile number.
+9.	Set a new password meeting the complexity requirements below.
+
+Password Policy Requirements
+•	Minimum 12 characters
+•	Must include: 1 uppercase, 1 lowercase, 1 number, 1 special character (!@#$%^&*)
+•	Cannot reuse the last 10 passwords
+•	Passwords expire every 90 days. A reminder is sent 14 days before expiry.
+•	Account locks after 5 consecutive failed attempts. Unlocks automatically after 30 minutes or via helpdesk.
+
+If SSPR fails (e.g., mobile number not registered), employees must visit the IT Help Desk with their employee ID card for manual verification and reset.
+
+1.4 VPN & Remote Access
+Policy ID: IT-004  |  Category: Network & Remote Access  |  Last Revised: March 2025
+NovaTech uses Cisco AnyConnect VPN for secure remote access to internal systems. VPN access is provisioned automatically for all full-time employees and must be requested separately for contractors.
+
+VPN Server	vpn.novatech.in  |  Protocol: SSL-TLS  |  Port: 443
+
+VPN Installation
+10.	Download Cisco AnyConnect from the NovaTech Software Portal (software.novatech.in) — select your OS.
+11.	Install and launch the client. Enter vpn.novatech.in as the server address.
+12.	Log in with your NovaTech SSO credentials + MFA token (Google Authenticator or hardware token).
+13.	Select 'NovaTech-Standard' profile for regular access or 'NovaTech-Privileged' for admin access (requires separate approval).
+
+VPN Troubleshooting — Common Issues
+Issue	Likely Cause	Resolution
+Cannot connect to VPN	Wrong server address or MFA misconfigured	Verify server is vpn.novatech.in; re-sync MFA token
+VPN connects but internal sites unreachable	Split tunneling misconfiguration	Disconnect, reconnect, select correct profile
+MFA OTP invalid	Device clock out of sync	Sync device time; contact helpdesk if persists
+VPN account locked	Too many failed login attempts	Raise SEV-3 ticket or call helpdesk
+
+1.5 Hardware Provisioning & Replacement
+Policy ID: IT-005  |  Category: Hardware  |  Last Revised: March 2025
+All NovaTech employees are issued standard hardware on their first day. Hardware is tracked in the NovaTech Asset Management System (NTAMS) and is the responsibility of the employee during their tenure.
+
+Standard Hardware Entitlements
+Role Level	Laptop	Additional Equipment
+L1 – L4 (Individual Contributor)	Dell Latitude 5540 or HP EliteBook 845	Docking station, keyboard, mouse, 24" monitor
+L5 – L7 (Senior / Lead)	Dell XPS 15 or MacBook Pro 14"	Dual 27" monitors, ergonomic accessories
+L8+ (Manager / Director+)	MacBook Pro 16" or Lenovo ThinkPad X1 Carbon	Triple monitor setup, Bose headset
+
+Hardware Damage & Replacement
+•	Accidental damage (first occurrence): Replaced at no cost after manager approval via IT-HW-REPLACE form.
+•	Accidental damage (repeat): Employee may bear 20–50% of replacement cost at IT Manager's discretion.
+•	Theft or loss: Report to local authorities within 24 hours and submit FIR copy + IT-HW-LOSS form within 48 hours. IT will provision a replacement within 3 business days.
+•	End-of-life replacement: Laptops are refreshed every 3 years. Employees in 3rd year of device can request early refresh via ticket.
+
+1.6 Software Installation Policy
+Policy ID: IT-006  |  Category: Software  |  Last Revised: March 2025
+Employees may only install software from the NovaTech-approved Software Catalogue (software.novatech.in). Installation of unlicensed or unapproved software is a violation of the Acceptable Use Policy and may result in disciplinary action.
+
+Approved Software Categories (No Approval Needed)
+•	Productivity: Microsoft 365 suite, Google Chrome, Slack, Zoom, Notion
+•	Development: VS Code, JetBrains IDEs (IntelliJ, PyCharm), Docker Desktop, Postman, Git
+•	Data: DBeaver, Tableau Desktop, Power BI Desktop, Python (via Conda)
+•	Security: Cisco AnyConnect, CrowdStrike Falcon, Bitwarden (company-managed)
+
+Software Requiring Approval (Raise IT-SWR Ticket)
+•	Any software not in the catalogue
+•	Open-source tools with GPL or AGPL licensing
+•	AI/ML tools with data ingestion capabilities (e.g., local LLM setups)
+•	Browser extensions beyond the pre-approved list
+
+Approval timeline: Standard requests — 3 business days. Security-reviewed requests — 7 business days. Emergency approvals (with business justification) — same day.
+
+ 
+Section 2: Access Management & Identity
+2.1 Account Provisioning
+Policy ID: IT-010  |  Category: Access Management  |  Last Revised: March 2025
+NovaTech accounts are provisioned automatically upon onboarding completion. The People Operations team triggers account creation in the HRMS on the employee's joining date. All accounts follow the naming convention: firstname.lastname@novatech.in.
+
+Day-1 Access Package
+•	NovaTech SSO account (Active Directory)
+•	Microsoft 365 (Outlook, Teams, SharePoint, OneDrive)
+•	Slack workspace (novatech-hq.slack.com)
+•	JIRA & Confluence (project-level access granted by team lead)
+•	Workday HRMS (employee self-service)
+•	NovaTech Intranet (intranet.novatech.in)
+
+Role-specific access (e.g., AWS console, database access, Salesforce) is granted within 2 business days of manager submitting the access request form (IT-ACC-REQ) in the portal.
+
+2.2 Access Request Process
+Policy ID: IT-011  |  Category: Access Management  |  Last Revised: March 2025
+Any access beyond the Day-1 package must be formally requested. Employees cannot self-provision access to any system. Access requests require manager approval and, for privileged systems, additional IT Security approval.
+
+Requesting New Access
+14.	Employee submits IT-ACC-REQ form at support.novatech.in/access-request.
+15.	Form requires: System name, access level requested, business justification, duration (permanent or temporary).
+16.	Manager receives email to approve or deny within 2 business days.
+17.	For classified systems (AWS prod, finance databases, customer PII), IT Security reviews within 1 additional business day.
+18.	Access is provisioned within 1 business day of final approval.
+
+Access Review	All access is reviewed quarterly. Unused access (>60 days) is automatically revoked with a 7-day notice email.
+
+2.3 Off-boarding & Access Revocation
+Policy ID: IT-012  |  Category: Access Management  |  Last Revised: March 2025
+Upon resignation or termination, the People Operations team initiates an off-boarding workflow that triggers automated access revocation. The timeline depends on the separation type.
+
+Separation Type	Access Revoked At	Data Retention
+Voluntary Resignation	Last working day at 6:00 PM IST	Email archived 90 days; files retained 1 year
+Involuntary Termination	Immediately upon HR notification to IT	Email archived 180 days; files retained 2 years
+Contract End	Last working day at 11:59 PM IST	Same as voluntary resignation
+Internship End	Last working day at 11:59 PM IST	Files deleted after 30 days
+
+Employees must return all hardware (laptop, accessories, access cards) to IT or the People Operations team on or before the last working day. Non-return results in recovery action per the Employment Agreement.
+
+ 
+Section 3: Human Resources Policies
+3.1 Leave Policy
+Policy ID: HR-001  |  Category: Leave Management  |  Last Revised: March 2025
+NovaTech's leave policy is designed to ensure employees can maintain a healthy work-life balance. All leaves must be applied for in Workday (workday.novatech.in) at least 24 hours in advance, except for emergencies.
+
+Leave Entitlements (Annual, Per Calendar Year)
+Leave Type	Entitlement	Notes
+Privileged Leave (PL)	18 days	Can be carried forward up to 30 days max. Encashable at year-end up to 10 days.
+Sick Leave (SL)	12 days	Requires medical certificate for >2 consecutive days. Cannot be carried forward.
+Casual Leave (CL)	6 days	Not combinable with PL or Public Holidays. Cannot be carried forward.
+Maternity Leave (ML)	26 weeks	As per Maternity Benefit Act, 1961. Applicable to female employees with >80 days of service.
+Paternity Leave (PAL)	10 days	Must be used within 3 months of child's birth/adoption.
+Bereavement Leave (BL)	5 days	For immediate family (spouse, parents, children, siblings). Extendable by 3 days with manager approval.
+Compensatory Off (CompOff)	Accrued for weekend/holiday work	Must be used within 60 days of accrual. Approved by manager.
+
+Leave Application Process
+19.	Log in to Workday at workday.novatech.in.
+20.	Navigate to Time Off > Request Time Off.
+21.	Select leave type, dates, and add a reason (optional for PL, mandatory for SL >2 days).
+22.	Manager receives approval notification and must act within 1 business day.
+23.	Employee receives email confirmation once approved. Leave balance updates automatically.
+
+Leave Without Pay (LWP)	If all applicable leave balances are exhausted, additional absences are treated as LWP and salary is deducted proportionally. LWP requires HR approval for periods >3 consecutive days.
+
+3.2 Work From Home (WFH) Policy
+Policy ID: HR-002  |  Category: Remote Work  |  Last Revised: March 2025
+NovaTech follows a hybrid work model. Employees are expected to be in office a minimum number of days per week based on their role category. WFH on additional days requires manager approval.
+
+Role Category	Minimum Office Days/Week	Max WFH Days/Week
+Engineering & Product	2 days (Tue/Thu recommended)	3 days
+Sales & Client Success	3 days	2 days
+HR, Finance & Operations	3 days	2 days
+Senior Leadership (L8+)	As per business need	Discretionary
+Interns & Trainees	4 days	1 day (Fridays only)
+
+WFH Request Process
+24.	Submit WFH request in Workday under Time Off > Work From Home at least 1 day in advance.
+25.	For recurring WFH arrangement (>4 weeks), submit a formal request via People Ops portal for HR + manager co-approval.
+26.	Employees must remain reachable during core hours (10:00 AM – 5:00 PM IST) on WFH days.
+
+Exceptions: Employees with medical conditions or caregiving responsibilities may apply for a permanent WFH arrangement. Submit form HR-WFH-MED to People Operations with supporting documentation. Approved by HR Director.
+
+3.3 Payroll & Compensation
+Policy ID: HR-003  |  Category: Payroll  |  Last Revised: March 2025
+Salaries are processed on the last working day of each month via NEFT/IMPS bank transfer. The payroll cut-off for attendance and leave data is the 25th of each month.
+
+Payslip & Tax Documents
+•	Payslips are available in Workday under Pay > Payslips on the 1st of each month.
+•	Form 16 (Part A & B) is issued by June 15 each year for the preceding financial year.
+•	Investment declaration window opens on April 1 and closes on December 31. Final proof submission is due February 28.
+•	Employees who miss the investment proof deadline will have excess TDS deducted in March salary.
+
+Salary Revision Cycle
+•	Annual Performance Review (APR): Appraisal ratings finalized in March. Revised salaries effective April 1.
+•	Mid-year corrections for promotions or band changes are processed on the 1st of the subsequent month after approval.
+•	Off-cycle hike requests require CHRO approval and are considered only for retention cases or significant role changes.
+
+Payroll Queries	For any payroll discrepancy, raise a ticket at support.novatech.in with category 'HR > Payroll'. Include the payslip month and specific discrepancy details. SLA: 3 business days.
+
+3.4 Reimbursements & Expenses
+Policy ID: HR-004  |  Category: Expenses  |  Last Revised: March 2025
+Employees can claim reimbursements for pre-approved business expenses. All claims must be submitted within 30 days of incurring the expense. Claims submitted after 30 days require Finance Head approval.
+
+Reimbursement Categories & Limits
+Category	Per-Claim Limit	Monthly Cap
+Local travel (cab/auto)	Rs. 2,000	Rs. 8,000
+Outstation travel (train/bus)	Actuals (AC 2-Tier max)	As per project budget
+Flight travel (domestic)	Actuals (Economy class)	Manager + Finance approval
+Meals (client entertainment)	Rs. 3,000 per event	Rs. 10,000
+Internet reimbursement (WFH)	Rs. 1,000/month	Rs. 1,000/month
+Professional certifications	Up to Rs. 25,000/year	L&D budget
+Mobile phone allowance	Rs. 750/month (L1-L4), Rs. 1,500 (L5+)	As listed
+
+Submission Process
+27.	Log in to Workday > Expenses > Create Expense Report.
+28.	Add line items with date, amount, category, and business justification.
+29.	Attach scanned receipts (JPG/PDF). Receipts are mandatory for claims above Rs. 500.
+30.	Submit for manager approval. Manager must approve within 3 business days.
+31.	Finance processes approved claims in the next payroll cycle. Separate reimbursement NEFT for amounts >Rs. 5,000.
+
+
+ 
+Section 4: Grievance Handling & Escalation
+4.1 Grievance Policy Overview
+Policy ID: HR-010  |  Category: Grievance Management  |  Last Revised: March 2025
+NovaTech is committed to providing a respectful, fair, and inclusive workplace. Employees who experience issues — whether related to work conditions, interpersonal conflicts, policy violations, or harassment — have the right to raise a grievance without fear of retaliation.
+
+All grievances are treated as confidential. Retaliation against any employee for raising a grievance in good faith is a serious violation of NovaTech's Code of Conduct and may result in disciplinary action up to and including termination.
+
+Types of Grievances Covered
+•	Workplace harassment (verbal, physical, or psychological)
+•	Sexual harassment (handled separately under POSH Policy — see Section 4.4)
+•	Discrimination based on gender, religion, caste, age, disability, or sexual orientation
+•	Unfair treatment, favoritism, or biased performance evaluation
+•	Policy violations by managers or peers
+•	Retaliation for whistleblowing or internal complaints
+•	Work environment concerns (unsafe conditions, unreasonable workload)
+•	Payroll or compensation disputes not resolved at HR Operations level
+
+4.2 Grievance Escalation Path
+Policy ID: HR-011  |  Category: Grievance Management  |  Last Revised: March 2025
+Employees are encouraged to resolve issues at the lowest possible level. The following escalation path must be followed unless the grievance involves the person at that level (in which case, skip to the next level).
+
+Level	Contact / Forum	Timeline
+Level 1 — Informal	Direct conversation with immediate manager	Within 5 working days of incident
+Level 2 — HR Business Partner	HRBP assigned to your BU (hrbp@novatech.in)	HRBP acknowledges within 2 days, resolves within 15 days
+Level 3 — Grievance Committee	Formal Grievance Committee (3-member panel)	Hearing within 10 days, resolution within 30 days
+Level 4 — HR Director	HR Director (hrdirector@novatech.in)	Decision within 15 days, binding on all parties
+Level 5 — External (Labor Court)	State Labour Commissioner or Labour Court	Per applicable labor law timelines
+
+4.3 How to Raise a Formal Grievance
+Policy ID: HR-012  |  Category: Grievance Management  |  Last Revised: March 2025
+A formal grievance can be raised when informal resolution has failed or when the nature of the complaint (e.g., harassment, discrimination) warrants skipping to formal channels.
+
+Submission Methods
+•	Online Portal: grievance.novatech.in — accessible 24x7, supports anonymous submissions
+•	Email: grievance@novatech.in — encrypted inbox, accessible only to HR Director and POSH Committee Head
+•	Physical Submission: Sealed envelope addressed to 'HR Grievance Cell, People Operations' deposited in secure drop-boxes on each floor
+
+Information to Include in a Grievance
+32.	Your name and employee ID (or 'Anonymous' for anonymous submissions — note: anonymous submissions limit investigative options)
+33.	Name(s) of the person(s) involved
+34.	Date, time, and location of the incident(s)
+35.	Detailed description of what occurred
+36.	Names of any witnesses
+37.	Any prior steps taken to resolve informally
+38.	Desired resolution or outcome
+
+Anonymous Grievances	Anonymous grievances will be investigated to the extent possible, but NovaTech cannot guarantee remediation or communicate outcomes to anonymous submitters. Employees are encouraged to use named submissions for faster resolution.
+
+Post-Submission Process
+39.	Acknowledgement sent within 1 business day (for named submissions).
+40.	HRBP assigned and preliminary review completed within 3 business days.
+41.	If escalated to Grievance Committee: Committee constituted within 7 days. Both parties interviewed. Written submissions allowed.
+42.	Final resolution communicated in writing. Remediation actions (if any) implemented within 15 days of decision.
+43.	Appeal against Grievance Committee decision must be filed with the HR Director within 10 days of receiving the decision.
+
+4.4 POSH Policy (Prevention of Sexual Harassment)
+Policy ID: HR-013  |  Category: POSH / Sexual Harassment  |  Last Revised: March 2025
+NovaTech fully complies with the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013. A separate Internal Complaints Committee (ICC) exists for POSH complaints and operates independently of the general grievance process.
+
+ICC Contact	posh-icc@novatech.in  |  ICC Presiding Officer: Priya Nair (People Operations VP)  |  External Member: Adv. Sunita Rao
+
+•	POSH complaints must be filed within 3 months of the incident (extendable to 6 months with ICC approval).
+•	ICC has 90 days to complete inquiry from date of complaint receipt.
+•	Both complainant and respondent have the right to present their case and be heard.
+•	All ICC proceedings are strictly confidential. Violation of confidentiality is a punishable offense.
+•	Conciliation may be attempted as first step (at complainant's request only).
+•	Interim relief (e.g., transfer, leave) can be requested while investigation is ongoing.
+
+4.5 Whistleblower Protection
+Policy ID: HR-014  |  Category: Whistleblower  |  Last Revised: March 2025
+Employees who report genuine concerns about financial misconduct, fraud, data privacy violations, or ethical breaches are protected under NovaTech's Whistleblower Policy. Reports can be made to ethics@novatech.in or anonymously via the Ethics Hotline: 1800-XXX-XXXX (toll-free, 24x7).
+
+•	Whistleblowers are protected from retaliation, demotion, unfair appraisal, or termination for good-faith reporting.
+•	False or malicious reporting with intent to harm others is itself a violation of the Code of Conduct.
+•	The Ethics Committee (chaired by the CFO and Legal Counsel) reviews all whistleblower complaints within 30 days.
+
+ 
+Section 5: Onboarding & Offboarding
+5.1 New Employee Onboarding Checklist
+Policy ID: HR-020  |  Category: Onboarding  |  Last Revised: March 2025
+The NovaTech onboarding process spans the first 90 days and is managed jointly by People Operations, IT, and the employee's reporting manager.
+
+Pre-Joining (Before Day 1)
+•	Receive offer letter and complete digital signing via DocuSign (sent 5–7 days before joining).
+•	Complete background verification via AuthBridge portal (link sent to personal email).
+•	Submit documents via NovaTech Document Portal: PAN, Aadhaar, educational certificates, previous employment documents, bank account details.
+•	Receive 'Day 1 Welcome Kit' email with building access instructions, parking pass, and IT setup guide.
+
+Day 1 Induction
+•	Report to People Operations at 9:30 AM at the assigned office location.
+•	Collect employee ID card and building access card from Front Desk.
+•	IT setup: Collect laptop, complete initial password setup, install required software.
+•	Complete mandatory e-learning modules: Code of Conduct, POSH Awareness, IT Security Basics, Data Privacy Fundamentals.
+•	Meet reporting manager and team. Calendar blocked for team introduction by manager.
+
+First 30/60/90 Days
+Milestone	Owner	Activities
+Week 1-2	Manager	Role briefing, team introductions, system access setup, buddy assignment
+Day 30	Manager + Employee	30-day check-in: goals clarity, initial feedback, any blockers
+Day 60	HRBP	Mid-probation review: performance, culture fit, wellbeing check
+Day 90	Manager + HR	Probation completion review. Confirmation letter issued if satisfactory.
+
+Probation Period	Standard probation: 90 days for most roles. Extended to 180 days for senior positions (L7+). Probation can be extended by 30 days once with documented justification.
+
+5.2 Resignation & Off-boarding Process
+Policy ID: HR-021  |  Category: Off-boarding  |  Last Revised: March 2025
+Employees wishing to resign must submit a formal resignation via Workday under Profile > Job > Resign. Verbal resignations are not accepted as formal notice.
+
+Notice Period
+Level	Notice Period	Buy-out Option
+L1 – L4	30 days	Employee can buy out with 30 days gross salary. Needs manager approval.
+L5 – L7	60 days	Buy-out allowed. Needs manager + HR approval.
+L8+	90 days	Buy-out requires CHRO approval. Rarely granted.
+
+Exit Checklist — Employee Responsibilities
+44.	Submit resignation in Workday and get manager acknowledgment.
+45.	Complete knowledge transfer (KT) as documented in the KT plan agreed with manager.
+46.	Return company assets: Laptop, accessories, access cards, company phone (if issued).
+47.	Clear all pending expense reports and leaves.
+48.	Complete exit interview with HRBP (mandatory; conducted in last week of notice period).
+49.	Receive Full & Final settlement details within 45 days of last working day.
+
+Full & Final Settlement	F&F includes: Pending salary, encashable leave balance, gratuity (if eligible — 5+ years service), and deductions for any outstanding advances or asset non-return.
+
+ 
+Section 6: Data Security & Acceptable Use Policy
+6.1 Data Classification
+Policy ID: IT-020  |  Category: Data Security  |  Last Revised: March 2025
+All data handled by NovaTech employees must be classified according to the following framework. Handling requirements differ by classification level.
+
+Classification	Definition	Handling Requirements
+Public	Data intended for public release (marketing, press releases)	No restrictions
+Internal	Operational data for employee use only (policies, internal comms)	Do not share externally without approval
+Confidential	Business-sensitive data (financials, contracts, roadmaps)	Encrypted storage, NDA required for third-party sharing
+Restricted	Highly sensitive (customer PII, source code, credentials)	Encrypted at rest and in transit, access logged, MFA required
+
+6.2 Acceptable Use Policy (AUP)
+Policy ID: IT-021  |  Category: Acceptable Use  |  Last Revised: March 2025
+NovaTech's IT resources (devices, network, software, email, internet access) are provided for business purposes. Limited personal use is acceptable but must not interfere with work or violate this policy.
+
+Prohibited Activities (Zero Tolerance)
+•	Accessing, downloading, or distributing illegal content of any kind
+•	Using company devices or email for personal business activities
+•	Installing keyloggers, spyware, or any surveillance software
+•	Attempting to bypass security controls, firewalls, or DLP systems
+•	Sharing login credentials with anyone, including colleagues
+•	Using company AI tools (Copilot, ChatGPT Enterprise) to process Restricted-class data without explicit InfoSec approval
+•	Connecting personal USB devices to company laptops without IT approval
+
+Monitoring & Privacy Notice
+Employees are informed that NovaTech monitors network traffic, email metadata, and device activity logs for security purposes using automated tools (SIEM: Microsoft Sentinel; EDR: CrowdStrike). Individual content is not reviewed without a formal security incident or HR investigation approval. All monitoring is compliant with applicable Indian IT and labor laws.
+
+6.3 Incident Reporting
+Policy ID: IT-022  |  Category: Security Incidents  |  Last Revised: March 2025
+Employees must report any suspected security incident immediately. Failure to report a known incident is a violation of the AUP.
+
+What to Report
+•	Phishing emails — forward to phishing@novatech.in and do not click any links
+•	Malware or ransomware symptoms (slow device, unexpected popups, encrypted files)
+•	Lost or stolen devices
+•	Unauthorized access to your account (unexpected login alerts)
+•	Accidental sharing of Confidential or Restricted data with wrong recipients
+
+How to Report
+50.	Call the Security Hotline immediately: +91-80-4567-8902 (24x7 for SEV-1/2)
+51.	Raise a ticket at support.novatech.in with category 'Security Incident'.
+52.	Do NOT attempt to investigate or remediate on your own. Isolate the affected device by disabling Wi-Fi.
+53.	Preserve evidence — do not delete suspicious emails or files until IT Security advises.
+
+Safe Harbour	Employees who report security incidents promptly and in good faith will not face disciplinary action for accidental incidents (e.g., clicking a phishing link). Prompt reporting is always rewarded.
+
+ 
+Section 7: Quick Reference Directory
+7.1 Key Contacts & Escalation Paths
+Policy ID: GEN-001  |  Category: Reference  |  Last Revised: March 2025
+
+Issue Type	First Contact	Escalation
+IT Hardware / Software	support.novatech.in | helpdesk@novatech.in	IT Manager: itmanager@novatech.in
+Password / Account Access	sso.novatech.in/reset (self-service)	helpdesk@novatech.in
+VPN / Network Issues	Raise SEV-2 ticket in portal	IT Network Team: network@novatech.in
+Leave / Attendance	Workday self-service	hrbp@novatech.in
+Payroll Discrepancy	Ticket: HR > Payroll category	payroll@novatech.in
+Expense Reimbursement	Workday > Expenses	finance-ops@novatech.in
+Workplace Grievance	grievance.novatech.in | hrbp@novatech.in	hrdirector@novatech.in
+Sexual Harassment (POSH)	posh-icc@novatech.in (ICC)	HR VP: priya.nair@novatech.in
+Ethics / Fraud Report	ethics@novatech.in | 1800-XXX-XXXX	CFO Office: ethics-committee@novatech.in
+Security Incident	+91-80-4567-8902 | security@novatech.in	CISO: ciso@novatech.in
+
+7.2 Important URLs
+Policy ID: GEN-002  |  Category: Reference  |  Last Revised: March 2025
+System	URL	Purpose
+IT Support Portal	support.novatech.in	Raise & track IT tickets
+SSO & Password Reset	sso.novatech.in	Login, MFA setup, password reset
+HRMS (Workday)	workday.novatech.in	Leave, payroll, expenses, onboarding
+Software Catalogue	software.novatech.in	Approved software downloads
+Grievance Portal	grievance.novatech.in	Submit formal grievances
+NovaTech Intranet	intranet.novatech.in	Policies, news, org chart
+Learning Portal	learn.novatech.in	L&D courses, certifications
+VPN Server	vpn.novatech.in	Cisco AnyConnect VPN endpoint
+
+— End of Document —
+NovaTech Solutions Pvt. Ltd. | Confidential | v4.2 | March 2026

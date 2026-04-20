@@ -1,9 +1,3 @@
-"""
-database.py — upgraded from SQLite to PostgreSQL.
-Schema mirrors the original but adds: slack_user_id, slack_channel,
-jira_ticket_id, confidence_score, escalated flag.
-"""
-
 import psycopg2
 import psycopg2.extras
 from config import DATABASE_URL

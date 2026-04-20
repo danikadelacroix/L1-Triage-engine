@@ -1,12 +1,10 @@
 """
-multi_agent.py — LangGraph pipeline from the original repo, upgraded with:
+multi_agent.py — LangGraph pipeline, upgraded with:
   - confidence_score node  (new)
   - conditional escalation edge  (new)
   - slack_user_id / slack_channel carried through state  (new)
   - jira_ticket_id written back into state after Jira creation  (new)
 
-All original agent nodes (sentiment, severity, credibility, priority,
-category, rag, resolution) are kept as-is from the source repo.
 """
 
 import os
@@ -55,8 +53,6 @@ vectorstore = Chroma(
 )
 retriever = vectorstore.as_retriever()
 llm = OllamaLLM(model=OLLAMA_MODEL)
-
-# ── Original nodes (unchanged from source repo) ────────────────────────────────
 
 def rag_node(state: GraphState):
     docs = retriever.invoke(state["complaint_text"])

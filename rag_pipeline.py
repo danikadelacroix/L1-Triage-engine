@@ -1,16 +1,6 @@
 """
 rag_pipeline.py — RAG pipeline updated to ingest the NovaTech KB.
 
-Changes from original repo:
-  - ingest_documents() now loads novatech_kb.txt (converted from .docx)
-    instead of arbitrary .txt files from a /docs folder
-  - Documents are split with larger overlap to preserve policy context
-    across chunk boundaries (policy tables and SLA numbers must not get
-    split mid-row and lose their meaning)
-  - The RAG prompt is rewritten for an IT/HR helpdesk assistant persona
-    instead of a citizen grievance redressal system
-  - ingest_documents() is exported so first_script.py can call it
-
 Usage (standalone test):
     python rag_pipeline.py
 """
@@ -138,19 +128,49 @@ rag_chain = (
 
 # ── Standalone test ────────────────────────────────────────────────────────────
 
+# if __name__ == "__main__":
+#     test_queries = [
+#         "How do I reset my NovaTech password? I'm locked out.",
+#         "I can't connect to the VPN and keep getting an MFA error.",
+#         "What is my annual leave entitlement and how do I apply?",
+#         "My March salary seems incorrect — who do I contact?",
+#         "I want to report my manager for harassment. What do I do?",
+#     ]
+
+#     print("\n🔍 RAG Pipeline Test — NovaTech KB\n")
+#     print("=" * 60)
+
+#     for query in test_queries:
+#         print(f"\n❓ Query: {query}")
+#         print(f"💬 Response:\n{rag_chain.invoke(query)}")
+#         print("─" * 60)
+
+
 if __name__ == "__main__":
     test_queries = [
         "How do I reset my NovaTech password? I'm locked out.",
-        "I can't connect to the VPN and keep getting an MFA error.",
-        "What is my annual leave entitlement and how do I apply?",
-        "My March salary seems incorrect — who do I contact?",
         "I want to report my manager for harassment. What do I do?",
     ]
 
-    print("\n🔍 RAG Pipeline Test — NovaTech KB\n")
+    print("\n🔍 RAG Pipeline Debugger\n")
     print("=" * 60)
 
     for query in test_queries:
         print(f"\n❓ Query: {query}")
-        print(f"💬 Response:\n{rag_chain.invoke(query)}")
-        print("─" * 60)
+        
+        # 1. TEST THE RETRIEVER (ChromaDB)
+        print("\n--- WHAT CHROMADB FOUND (CONTEXT) ---")
+        docs = retriever.invoke(query)
+        
+        if not docs:
+            print("❌ ChromaDB found NOTHING. The database is empty or the search failed.")
+        else:
+            for i, doc in enumerate(docs):
+                print(f"\n[Chunk {i+1}]:\n{doc.page_content}")
+                print("-" * 40)
+        
+        # 2. TEST THE LLM (Mistral)
+        print("\n--- WHAT MISTRAL ANSWERED ---")
+        response = rag_chain.invoke(query)
+        print(response)
+        print("=" * 60)
