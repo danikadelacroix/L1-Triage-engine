@@ -112,11 +112,11 @@ def priority_node(state: GraphState):
 
 def category_node(state: GraphState):
     prompt = ChatPromptTemplate.from_template(
-        "Select ONE category from: Roads, Electricity, Water, Sanitation, Healthcare, Law & Order\n"
+        "Select ONE category from: Hardware, Software, Network / VPN, Access Management, HR / Payroll, Grievance, Security, Other\n"
         "Complaint: {text}\nReturn ONLY the category name."
     )
     raw = (prompt | llm | StrOutputParser()).invoke({"text": state["complaint_text"]}).strip()
-    allowed = ["Roads", "Electricity", "Water", "Sanitation", "Healthcare", "Law & Order"]
+    allowed = ["Hardware", "Software", "Network / VPN", "Access Management", "HR / Payroll", "Grievance", "Security", "Other"]
     for a in allowed:
         if a.lower() in raw.lower():
             return {"category": a}
@@ -129,7 +129,7 @@ def resolution_node(state: GraphState):
         "Output a VALID JSON object with EXACTLY these keys:\n"
         '{{"summary": string, "immediate_actions": array of 2-4 strings, '
         '"responsible_department": string, "sla_hours": number}}\n'
-        "Rules: Raw JSON only. No markdown. No extra keys.\n"
+        "Rules: Raw JSON only. No markdown. No extra keys. NO comments (//) inside the JSON.\n"
         "Complaint:\n{complaint}\nRetrieved Context:\n{context}"
     )
     context = "\n".join(state["context_docs"][:3])
