@@ -1,5 +1,5 @@
 """
-app.py — FastAPI server replacing the earlier Streamlit app.
+app.py — FastAPI server replacing the original Streamlit app.
 
 Exposes two endpoints:
   POST /slack/events   — receives Slack event subscriptions (mentions, DMs)
@@ -10,6 +10,7 @@ and publishes the ticket to RabbitMQ for async processing.
 """
 
 import hmac
+
 import hashlib
 import time
 import json
@@ -108,17 +109,21 @@ async def slack_events(request: Request, background_tasks: BackgroundTasks):
       - message.im: user DMs the bot directly
     """
     body_bytes = await request.body()
-    timestamp  = request.headers.get("X-Slack-Request-Timestamp", "")
-    signature  = request.headers.get("X-Slack-Signature", "")
+
+    try:
+        payload = json.loads(body_bytes)
+    except json.JSONDecodeError:
+        raise HTTPException(status_code=400, detail="Invalid JSON")
+
+    if payload.get("type") == "url_verification":
+        return JSONResponse(content={"challenge": payload["challenge"]})
+
+    # All other events must pass signature verification
+    timestamp = request.headers.get("X-Slack-Request-Timestamp", "")
+    signature = request.headers.get("X-Slack-Signature", "")
 
     if not verify_slack_signature(body_bytes, timestamp, signature):
         raise HTTPException(status_code=403, detail="Invalid Slack signature")
-
-    payload = json.loads(body_bytes)
-
-    # Slack sends a challenge during app setup — must echo it back
-    if payload.get("type") == "url_verification":
-        return JSONResponse(content={"challenge": payload["challenge"]})
 
     event = payload.get("event", {})
     event_type = event.get("type", "")
