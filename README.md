@@ -75,9 +75,9 @@ Employee (Slack)
 # 1. Install dependencies
 git clone https://github.com/your-username/l1-support-engine.git
 cd l1-support-engine
-python -m venv venv && source venv/bin/activate
+python -m venv venv && venv\Scripts\activate
 pip install -r requirements.txt
-S
+
 # 2. Pull the LLM
 ollama serve && ollama pull mistral
 
@@ -97,7 +97,7 @@ python first_script.py
 # 7. Run (three terminals)
 uvicorn app:app --reload --port 8000
 python worker.py
-python test_ticket.py
+ngrok http 8000
 ```
 
 ---
@@ -105,7 +105,7 @@ python test_ticket.py
 ## Slack App Setup
 
 1. [Create a Slack App](https://api.slack.com/apps) → **From scratch**
-2. **OAuth & Permissions** — add bot scopes: `chat:write`, `commands`, `app_mentions:read`, `im:history`
+2. **OAuth & Permissions** — add bot scopes: `chat:write`, `commands`, `app_mentions:read`, `im:history`, `im:write`
 3. **Slash Commands** — create `/raise-ticket`, request URL: `https://<ngrok>/slack/commands`
 4. **Event Subscriptions** — enable, set URL: `https://<ngrok>/slack/events`, subscribe to `app_mention` and `message.im`
 5. Install to workspace, copy Bot Token + Signing Secret to `.env`
@@ -116,4 +116,14 @@ python test_ticket.py
 
 ---
 
-Tickets **≥ 0.7** are auto-resolved. Below that, they escalate with the full AI analysis attached for the human agent. Threshold is configurable via `CONFIDENCE_THRESHOLD`.
+## Live Demo
+
+Experience the AI triage system in action and join the Slack workspace:  
+https://join.slack.com/t/newworkspace-jjo8297/shared_invite/zt-3wa6fl7gw-WInnFFWbgMAZxfLpoun_gw  
+
+> Note: The backend is hosted locally to optimize costs. If the bot is unresponsive, feel free to reach out, I can spin up the server for a live demo.
+
+
+
+> Built by **Anushka Rajput**, 3rd Year Computer Science Student, IET Lucknow  
+Built as a project to explore autonomous AI agents, RAG systems, and real-world LLM applications in enterprise workflows.
