@@ -124,6 +124,6 @@ https://join.slack.com/t/newworkspace-jjo8297/shared_invite/zt-3wa6fl7gw-WInnFFW
 > Note: The backend is hosted locally to optimize costs. If the bot is unresponsive, feel free to reach out, I can spin up the server for a live demo.
 
 
-
-> Built by **Anushka Rajput**, 3rd Year Computer Science Student, IET Lucknow  
-Built as a project to explore autonomous AI agents, RAG systems, and real-world LLM applications in enterprise workflows.
+## Author
+**Anushka Rajput**, 3rd Year Computer Science Student, IET Lucknow  
+Built to solve real enterprise support automation challenges using autonomous AI agents, RAG, and async messaging
