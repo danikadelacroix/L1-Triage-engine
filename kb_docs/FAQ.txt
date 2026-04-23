@@ -1,0 +1,208 @@
+NOVATECH SOLUTIONS — EMPLOYEE IT & HR FREQUENTLY ASKED QUESTIONS
+Document ID: GEN-FAQ-001 | Version 1.3 | Last Revised: March 2025
+Maintained by: People Operations & IT Helpdesk
+
+This document is used by the NovaTech L1 Support Engine (NTSE) to resolve
+common employee queries without human intervention.
+
+================================================================================
+SECTION A: IT & ACCESS
+================================================================================
+
+Q: How do I reset my NovaTech password?
+A: Use the self-service portal at sso.novatech.in/reset from any device. Enter your
+registered email (firstname.lastname@novatech.in), verify via OTP to your registered
+mobile, and set a new password. Password must be at least 12 characters with 1 uppercase,
+1 lowercase, 1 number, and 1 special character. Cannot reuse last 10 passwords.
+If SSPR fails, visit IT Help Desk at Floor 2, Block B, Bengaluru HQ with your employee ID.
+
+Q: My account is locked. What do I do?
+A: Accounts auto-unlock after 30 minutes. For immediate unlock call +91-80-4567-8901.
+Accounts lock after 5 consecutive failed login attempts. If you did not cause the lockout,
+report immediately to security@novatech.in as a potential account compromise.
+
+Q: How do I install the VPN?
+A: Download Cisco AnyConnect from software.novatech.in. Install and enter vpn.novatech.in
+as the server address. Log in with your NovaTech SSO credentials and MFA token.
+Select NovaTech-Standard profile for regular access. VPN uses SSL-TLS on port 443.
+
+Q: How do I request access to a new system or tool?
+A: Submit an IT-ACC-REQ form at support.novatech.in/access-request. Include the system
+name, access level, business justification, and duration. Manager approval required within
+2 business days. Classified systems (AWS prod, finance databases) require additional
+IT Security review. Access provisioned within 1 business day of final approval.
+
+Q: Can I install software that is not in the approved catalogue?
+A: Yes, but you need approval. Raise an IT-SWR ticket at support.novatech.in with the
+software name, version, and business justification. Standard requests take 3 business days.
+Security-reviewed requests (AI tools, network tools) take 7 business days.
+Do not install unapproved software — it is a violation of the Acceptable Use Policy.
+
+Q: What laptop am I entitled to?
+A: L1-L4 employees receive a Dell Latitude 5540 or HP EliteBook 845 with docking station,
+keyboard, mouse, and 24-inch monitor. L5-L7 receive Dell XPS 15 or MacBook Pro 14-inch
+with dual 27-inch monitors. L8 and above receive MacBook Pro 16-inch or ThinkPad X1 Carbon
+with triple monitor setup. Laptops are refreshed every 3 years.
+
+Q: My laptop is damaged. How do I get it replaced?
+A: First occurrence of accidental damage is replaced at no cost after manager approval.
+Submit IT-HW-REPLACE form at support.novatech.in. Repeat damage may require employee to
+bear 20-50% of replacement cost. For theft or loss, file an FIR with local authorities
+within 24 hours and submit FIR copy plus IT-HW-LOSS form within 48 hours.
+IT provisions replacement within 3 business days.
+
+Q: What are the helpdesk hours?
+A: Monday to Friday 8AM to 9PM IST. Saturday 9AM to 5PM IST.
+Sunday and public holidays: on-call only. For critical production outages (SEV-1):
+call +91-80-4567-8901 available 24x7.
+
+Q: How do I raise an IT support ticket?
+A: Go to support.novatech.in, log in with SSO credentials, click New Ticket, select
+category (Hardware / Software / Network / Access / Other), fill in title, description,
+and severity, then submit. You will receive a ticket ID (format NT-XXXXXX) within 5 minutes.
+Do not email individual IT team members — all requests must go through the portal.
+
+Q: What are the ticket severity levels and response times?
+A: SEV-1 Critical (production down, data loss risk): 15-minute response.
+SEV-2 High (major feature unavailable, more than 10 users impacted): 2-hour response.
+SEV-3 Medium (single user impacted, workaround available): 8 business hours.
+SEV-4 Low (general query, minor inconvenience): 24 business hours.
+
+Q: How do I report a phishing email?
+A: Forward the email to phishing@novatech.in and do not click any links in it.
+Do not attempt to investigate yourself. If you accidentally clicked a link, call
+the Security Hotline immediately at +91-80-4567-8902 (24x7). You will not face
+disciplinary action for accidental clicks if you report promptly.
+
+Q: Can I use personal USB drives on my work laptop?
+A: No. Connecting personal USB devices to company laptops without IT approval is
+prohibited under the Acceptable Use Policy. Raise a ticket if you need to transfer
+files — IT can provide approved methods such as SharePoint or OneDrive.
+
+Q: What happens to my account and data when I resign?
+A: Your access is revoked on your last working day at 6PM IST for voluntary resignation.
+Email is archived for 90 days and files retained for 1 year. You must return all hardware
+(laptop, accessories, access cards) on or before your last working day.
+
+================================================================================
+SECTION B: LEAVE & ATTENDANCE
+================================================================================
+
+Q: How many leave days do I get per year?
+A: Privileged Leave (PL): 18 days — can carry forward up to 30 days, encashable up to
+10 days at year-end. Sick Leave (SL): 12 days — requires medical certificate for more
+than 2 consecutive days, cannot be carried forward. Casual Leave (CL): 6 days — cannot
+be combined with PL or public holidays, cannot be carried forward.
+Maternity Leave: 26 weeks. Paternity Leave: 10 days within 3 months of birth or adoption.
+Bereavement Leave: 5 days for immediate family.
+
+Q: How do I apply for leave?
+A: Log in to Workday at workday.novatech.in. Navigate to Time Off > Request Time Off.
+Select leave type, dates, and reason (optional for PL, mandatory for SL over 2 days).
+Apply at least 24 hours in advance except for emergencies. Manager must act on the
+request within 1 business day.
+
+Q: Can I carry forward unused leaves to next year?
+A: Only Privileged Leave (PL) can be carried forward, up to a maximum of 30 days.
+Sick Leave and Casual Leave cannot be carried forward and lapse at year-end.
+
+Q: What happens if I exhaust all my leaves?
+A: Additional absences are treated as Leave Without Pay (LWP) and salary is deducted
+proportionally. LWP for more than 3 consecutive days requires HR approval.
+Apply via People Operations portal.
+
+Q: How do I check my leave balance?
+A: Log in to Workday at workday.novatech.in. Navigate to Time Off > Leave Balance.
+Balances update automatically when leaves are approved.
+
+Q: What is the WFH policy?
+A: Engineering and Product employees: minimum 2 days in office per week (Tuesday and
+Thursday recommended), maximum 3 days WFH. Sales and Client Success: 3 days in office.
+HR, Finance, Operations: 3 days in office. Interns and Trainees: 4 days in office,
+WFH only on Fridays. Submit WFH requests in Workday under Time Off > Work From Home
+at least 1 day in advance.
+
+================================================================================
+SECTION C: PAYROLL & EXPENSES
+================================================================================
+
+Q: When is salary credited?
+A: Salaries are processed on the last working day of each month via NEFT/IMPS.
+Payroll cut-off for attendance and leave data is the 25th of each month.
+
+Q: Where can I find my payslip?
+A: Log in to Workday at workday.novatech.in. Navigate to Pay > Payslips.
+Payslips are available from the 1st of each month for the previous month.
+
+Q: My salary is incorrect this month. What do I do?
+A: Raise a ticket at support.novatech.in with category HR > Payroll.
+Include the payslip month and the specific discrepancy (amount, component).
+SLA for payroll queries is 3 business days. You can also email payroll@novatech.in.
+
+Q: When is Form 16 issued?
+A: Form 16 (Part A and Part B) is issued by June 15 each year for the preceding
+financial year. Available in Workday under Pay > Tax Documents.
+
+Q: When does the investment declaration window open?
+A: Investment declaration window opens April 1 and closes December 31.
+Final proof of investment submission is due February 28.
+Missing the deadline results in excess TDS deduction in the March salary.
+
+Q: How do I claim a reimbursement?
+A: Log in to Workday > Expenses > Create Expense Report. Add line items with date,
+amount, category, and business justification. Attach scanned receipts (JPG or PDF).
+Receipts are mandatory for claims above Rs. 500. Submit for manager approval.
+Manager must approve within 3 business days. Finance processes in the next payroll cycle.
+Claims must be submitted within 30 days of incurring the expense.
+
+Q: What is the internet reimbursement amount for WFH employees?
+A: Rs. 1,000 per month. Submit via Workday > Expenses with your internet bill as receipt.
+
+Q: What is the mobile phone allowance?
+A: L1 to L4 employees receive Rs. 750 per month. L5 and above receive Rs. 1,500 per month.
+Claimed via Workday > Expenses monthly.
+
+================================================================================
+SECTION D: HR & GRIEVANCES
+================================================================================
+
+Q: How do I raise a workplace grievance?
+A: You can raise a grievance via the online portal at grievance.novatech.in (supports
+anonymous submissions), by email to grievance@novatech.in, or via physical sealed envelope
+deposited in drop-boxes on each floor addressed to HR Grievance Cell, People Operations.
+Acknowledgement is sent within 1 business day for named submissions.
+
+Q: What is the grievance escalation path?
+A: Level 1: Informal conversation with immediate manager (within 5 working days).
+Level 2: HR Business Partner at hrbp@novatech.in (resolves within 15 days).
+Level 3: Formal Grievance Committee — hearing within 10 days, resolution within 30 days.
+Level 4: HR Director at hrdirector@novatech.in — decision within 15 days, binding.
+Level 5: External — State Labour Commissioner or Labour Court.
+
+Q: How do I report sexual harassment?
+A: Contact the Internal Complaints Committee (ICC) directly at posh-icc@novatech.in.
+ICC Presiding Officer is Priya Nair (People Operations VP).
+Complaints must be filed within 3 months of the incident (extendable to 6 months).
+ICC has 90 days to complete inquiry. All proceedings are strictly confidential.
+Do not use the general grievance portal for POSH complaints.
+
+Q: What is the notice period if I resign?
+A: L1 to L4: 30 days. L5 to L7: 60 days. L8 and above: 90 days.
+Notice period can be bought out — L1-L4 requires manager approval, L5-L7 requires
+manager and HR approval, L8+ requires CHRO approval and is rarely granted.
+Submit resignation formally via Workday under Profile > Job > Resign.
+Verbal resignations are not accepted.
+
+Q: When do I receive my Full and Final settlement after resignation?
+A: Full and Final settlement is processed within 45 days of your last working day.
+It includes pending salary, encashable leave balance, gratuity (if eligible — requires
+5 or more years of service), minus any deductions for outstanding advances or
+unreturned assets.
+
+Q: How do I report financial fraud or ethical concerns?
+A: Email ethics@novatech.in or call the Ethics Hotline at 1800-XXX-XXXX (toll-free, 24x7,
+anonymous). The Ethics Committee chaired by the CFO reviews all complaints within 30 days.
+Whistleblowers are protected from retaliation under NovaTech's Whistleblower Policy.
+
+— End of FAQ Document —
+NovaTech Solutions Pvt. Ltd. | GEN-FAQ-001 | v1.3 | March 2025

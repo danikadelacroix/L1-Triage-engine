@@ -1,0 +1,204 @@
+NOVATECH SOLUTIONS — APPROVED SOFTWARE CATALOGUE & INSTALLATION GUIDE
+Document ID: IT-SC-001 | Version 2.4 | Last Revised: March 2025
+Maintained by: IT Software Team | itsoftware@novatech.in
+
+All software listed in this catalogue is pre-approved for installation by NovaTech employees
+without raising a support ticket. Download all software from software.novatech.in using
+your NovaTech SSO credentials. Do not download from external sources.
+
+Installation of software NOT in this catalogue requires approval via IT-SWR ticket.
+See Section 5 for the approval process.
+
+================================================================================
+SECTION 1: PRODUCTIVITY & COMMUNICATION
+================================================================================
+
+MICROSOFT 365 SUITE
+Includes: Outlook, Word, Excel, PowerPoint, Teams, SharePoint, OneDrive
+Download: software.novatech.in > Productivity > Microsoft 365
+License: Enterprise E3 (company-provided, do not use personal Microsoft account)
+Installation:
+  1. Download M365 installer from software portal
+  2. Run installer, sign in with firstname.lastname@novatech.in when prompted
+  3. Complete MFA verification
+  4. All M365 apps activate automatically — no product key needed
+Notes: Do not link personal OneDrive. Company data must stay in NovaTech OneDrive only.
+       Teams is the primary internal communication tool. Use novatech-hq.slack.com for
+       cross-functional and engineering communication.
+
+SLACK
+Version: Latest stable
+Download: software.novatech.in > Productivity > Slack OR slack.com/downloads
+Workspace URL: novatech-hq.slack.com
+Installation:
+  1. Download and install Slack desktop app
+  2. Click Sign in to Slack > sign in with email
+  3. Enter novatech-hq.slack.com as workspace URL
+  4. Authenticate via NovaTech SSO (do not create a new Slack account)
+Notes: Use company Slack workspace only for work communications.
+       Personal Slack accounts must not be used on company devices.
+
+ZOOM
+Version: Latest stable
+Download: software.novatech.in > Productivity > Zoom
+License: Business (company-provided)
+Installation:
+  1. Download Zoom installer from software portal
+  2. Install and open Zoom
+  3. Click Sign In > Sign In with SSO
+  4. Enter novatech as company domain
+  5. Authenticate via NovaTech SSO
+Notes: Do not use free personal Zoom account for company meetings.
+       Recording of meetings requires participant consent per Data Privacy Policy.
+
+GOOGLE CHROME
+Download: software.novatech.in > Productivity > Chrome
+Notes: Pre-approved browser extensions list available on intranet.novatech.in.
+       Additional extensions require IT-SWR ticket approval.
+
+NOTION
+Download: notion.so/desktop OR software.novatech.in > Productivity > Notion
+License: Team plan (join via invitation from your manager or team lead)
+Notes: Do not store Restricted-class data (customer PII, credentials) in Notion.
+       Internal and Confidential data permitted with encryption-at-rest enabled.
+
+================================================================================
+SECTION 2: DEVELOPMENT TOOLS
+================================================================================
+
+VISUAL STUDIO CODE
+Version: Latest stable
+Download: software.novatech.in > Development > VS Code OR code.visualstudio.com
+Extensions: All Microsoft-published extensions pre-approved. Third-party extensions
+            require IT-SWR ticket if they have network access or data collection.
+Installation: Standard installer, no special configuration required.
+
+JETBRAINS IDEs (IntelliJ IDEA, PyCharm, WebStorm, GoLand, DataGrip)
+Download: software.novatech.in > Development > JetBrains
+License: Company JetBrains license — activate via JetBrains License Server
+License Server: jetbrains.novatech.in (accessible on VPN)
+Installation:
+  1. Download IDE from software portal
+  2. Install and launch
+  3. On activation screen, select License Server
+  4. Enter: https://jetbrains.novatech.in
+  5. Activate — license is tied to your NovaTech SSO account
+Notes: Do not use personal JetBrains account. If license server is unreachable,
+       ensure you are connected to VPN (vpn.novatech.in).
+
+DOCKER DESKTOP
+Download: software.novatech.in > Development > Docker
+Notes: Windows users require WSL2 enabled. IT Helpdesk can assist with WSL2 setup.
+       Docker Desktop for Mac requires Apple Silicon or Intel version — select correctly.
+       Raise IT-SWR ticket if you need to run privileged containers in production.
+
+POSTMAN
+Download: software.novatech.in > Development > Postman OR postman.com/downloads
+License: Team workspace — request team invitation from your tech lead
+Notes: Do not store production API keys or credentials in shared Postman workspaces.
+       Use Postman Vault for sensitive variables.
+
+GIT
+Download: software.novatech.in > Development > Git
+Version Control: NovaTech uses GitHub Enterprise at github.novatech.in
+GitHub Access: Provisioned by team lead via IT-ACC-REQ form on your first day
+SSH Setup: Refer to github.novatech.in/docs/ssh-setup for key generation guide
+Notes: All code must be committed to NovaTech GitHub. Personal GitHub accounts
+       must not contain NovaTech proprietary code.
+
+PYTHON (via Miniconda)
+Download: software.novatech.in > Development > Miniconda
+Recommended: Python 3.10 or 3.11 for compatibility with NovaTech ML stack
+Installation:
+  1. Download Miniconda installer (choose OS-appropriate version)
+  2. Install with default settings
+  3. Create project-specific environments: conda create -n myenv python=3.11
+Notes: Anaconda (full distribution) also approved but Miniconda recommended for
+       smaller footprint. Virtual environments mandatory for all Python projects.
+
+NODE.JS & NPM
+Download: software.novatech.in > Development > Node.js
+Recommended version: LTS (currently 20.x)
+Notes: Use nvm (Node Version Manager) for managing multiple Node versions.
+       nvm for Windows available at software.novatech.in > Development > nvm-windows.
+
+================================================================================
+SECTION 3: DATA & ANALYTICS TOOLS
+================================================================================
+
+DBEAVER (Community Edition)
+Download: software.novatech.in > Data > DBeaver
+Purpose: Universal database client — supports PostgreSQL, MySQL, Oracle, MSSQL
+Notes: Connection credentials for NovaTech databases available from your team lead.
+       Do not connect to production databases directly — use read replicas only.
+       Production database access requires IT-ACC-REQ with manager and DBA approval.
+
+TABLEAU DESKTOP
+Download: software.novatech.in > Data > Tableau
+License: Creator license — company-provided, activate with NovaTech license key
+License Key: Available in software portal after download
+Notes: Publish dashboards to NovaTech Tableau Server at tableau.novatech.in.
+       Do not publish dashboards containing customer PII to public or external workbooks.
+
+POWER BI DESKTOP
+Download: software.novatech.in > Data > Power BI Desktop
+License: Included in Microsoft 365 E3 enterprise license
+Notes: Connect to company data sources via approved connectors only.
+       Power BI reports containing Confidential or Restricted data must have
+       Row Level Security (RLS) configured before sharing.
+
+================================================================================
+SECTION 4: SECURITY TOOLS (MANDATORY — DO NOT UNINSTALL)
+================================================================================
+
+CISCO ANYCONNECT VPN
+Download: software.novatech.in > Security > Cisco AnyConnect
+Server: vpn.novatech.in | Protocol: SSL-TLS | Port: 443
+MANDATORY for remote access to all internal NovaTech systems.
+Do not uninstall or disable. Required for accessing intranet, Jira, Confluence,
+GitHub Enterprise, and all internal APIs from outside office network.
+
+CROWDSTRIKE FALCON (EDR)
+Pre-installed on all NovaTech-provisioned laptops.
+Do not uninstall, disable, or tamper with CrowdStrike Falcon sensor.
+Tampering is a violation of the Acceptable Use Policy and may result in
+immediate disciplinary action. Contact security@novatech.in for exceptions.
+
+BITWARDEN (Company-Managed)
+Download: software.novatech.in > Security > Bitwarden
+Purpose: Company password manager — use for all work-related credentials
+Vault: Managed by IT Security. Master password set during onboarding.
+Notes: Do not store NovaTech credentials in personal password managers.
+       Do not share vault items outside authorised team members.
+
+================================================================================
+SECTION 5: SOFTWARE REQUIRING APPROVAL (IT-SWR TICKET)
+================================================================================
+
+The following categories ALWAYS require an IT-SWR ticket regardless of specific tool:
+
+- Any software not listed in this catalogue
+- Open-source tools with GPL, AGPL, or LGPL licensing
+- AI and ML tools with data ingestion capabilities (local LLMs, AI coding assistants
+  beyond GitHub Copilot, tools that send data to external APIs)
+- Browser extensions beyond the pre-approved list (available on intranet.novatech.in)
+- Network monitoring or packet capture tools (Wireshark, etc.)
+- Remote access tools beyond AnyConnect (TeamViewer, AnyDesk, etc.)
+- Any software that requires disabling CrowdStrike or Windows Defender
+
+HOW TO RAISE AN IT-SWR TICKET
+1. Go to support.novatech.in > New Ticket > Category: Software > Software Installation Request
+2. Provide:
+   - Software name and version
+   - Official download URL
+   - Business justification (why you need it, which project/task)
+   - License type (free, paid, open-source — specify license)
+   - Data handling: does this software send data externally? (Yes/No)
+3. Approval timelines:
+   - Standard request: 3 business days
+   - Security review required (AI tools, network tools): 7 business days
+   - Emergency with business justification and manager sign-off: same day
+4. You will receive approval or rejection via email with reasoning.
+
+— End of Software Catalogue —
+NovaTech Solutions Pvt. Ltd. | IT-SC-001 | v2.4 | March 2026

@@ -1,0 +1,167 @@
+NOVATECH SOLUTIONS — ESCALATION MATRIX & CONTACTS DIRECTORY
+Document ID: GEN-ESC-001 | Version 3.0 | Last Revised: March 2025
+Maintained by: IT Infrastructure & People Operations
+
+This document defines ownership, escalation paths, SLA commitments, and contact
+details for all support categories. Used by the NovaTech L1 Support Engine (NTSE)
+to route tickets accurately and provide employees with the correct escalation contact.
+
+================================================================================
+SECTION 1: IT SUPPORT ESCALATION MATRIX
+================================================================================
+
+CATEGORY: Hardware (Laptops, Monitors, Peripherals, Access Cards)
+  L1 Owner:     IT Helpdesk — support.novatech.in | helpdesk@novatech.in
+  L2 Escalation: IT Hardware Team — ithardware@novatech.in
+  L3 Escalation: IT Manager — itmanager@novatech.in
+  SLA L1:       SEV-2: 2 hours | SEV-3: 8 business hours | SEV-4: 24 business hours
+  Forms:        IT-HW-REPLACE (damage/replacement) | IT-HW-LOSS (theft/loss)
+  Notes:        Loaner devices available for SEV-2 hardware failures within 4 business hours.
+                Physical damage assessment done by IT Hardware Team in person.
+
+CATEGORY: Software (Installation, Licensing, Application Errors)
+  L1 Owner:     IT Helpdesk — support.novatech.in
+  L2 Escalation: IT Software Team — itsoftware@novatech.in
+  L3 Escalation: IT Manager — itmanager@novatech.in
+  SLA L1:       SEV-3: 8 business hours | SEV-4: 24 business hours
+  Forms:        IT-SWR (software installation request requiring approval)
+  Approved Software Portal: software.novatech.in
+  Notes:        AI/ML tools and GPL-licensed software require security review (7 business days).
+
+CATEGORY: Network & VPN (Connectivity, VPN, Wi-Fi, Firewall)
+  L1 Owner:     IT Helpdesk — support.novatech.in
+  L2 Escalation: IT Network Team — network@novatech.in
+  L3 Escalation: IT Infrastructure Lead — infra@novatech.in
+  SLA L1:       SEV-1: 15 minutes | SEV-2: 2 hours | SEV-3: 8 business hours
+  VPN Server:   vpn.novatech.in | Protocol: SSL-TLS | Port: 443
+  Notes:        VPN issues affecting >10 employees simultaneously = SEV-1, escalate directly
+                to network@novatech.in without waiting for L1 resolution attempt.
+
+CATEGORY: Access Management (Account Provisioning, SSO, MFA, Permissions)
+  L1 Owner:     IT Helpdesk — support.novatech.in | sso.novatech.in/reset (self-service)
+  L2 Escalation: IT Access Management Team — iam@novatech.in
+  L3 Escalation: IT Security — security@novatech.in (for suspected compromises)
+  SLA L1:       SEV-2: 2 hours | SEV-3: 8 business hours
+  Forms:        IT-ACC-REQ (new access request)
+  Notes:        Suspected account compromise escalates immediately to security@novatech.in
+                bypassing L1. Access reviews happen quarterly — unused access auto-revoked
+                after 60 days with 7-day notice.
+
+CATEGORY: Security Incidents (Phishing, Malware, Data Breach, Lost Device)
+  L1 Owner:     Security Hotline — +91-80-4567-8902 (24x7 for SEV-1/SEV-2)
+  L2 Escalation: IT Security Team — security@novatech.in
+  L3 Escalation: CISO — ciso@novatech.in
+  SLA:          SEV-1: 15 minutes (call hotline, do not raise portal ticket)
+  Phishing:     Forward to phishing@novatech.in — do not click links
+  Notes:        Employees who report promptly are protected under Safe Harbour policy.
+                Do not attempt self-remediation. Isolate affected device immediately.
+
+CATEGORY: Microsoft 365 (Outlook, Teams, SharePoint, OneDrive)
+  L1 Owner:     IT Helpdesk — support.novatech.in
+  L2 Escalation: IT Software Team — itsoftware@novatech.in
+  L3 Escalation: Microsoft Support via IT (enterprise contract)
+  SLA L1:       SEV-3: 8 business hours
+  Service Status: status.office.com (check before raising ticket)
+  Notes:        M365 outages affecting all employees are Microsoft-side — check
+                status.office.com first. Account-specific issues handled by IT.
+
+================================================================================
+SECTION 2: HR SUPPORT ESCALATION MATRIX
+================================================================================
+
+CATEGORY: Leave & Attendance
+  L1 Owner:     Workday self-service — workday.novatech.in
+  L2 Escalation: HR Business Partner — hrbp@novatech.in
+  L3 Escalation: HR Director — hrdirector@novatech.in
+  SLA L2:       Acknowledgement within 2 business days, resolution within 7 business days
+  Notes:        Leave balance queries, application errors, attendance corrections
+                handled by HRBP. Policy clarifications available via NTSE.
+
+CATEGORY: Payroll & Compensation
+  L1 Owner:     Workday self-service (payslips, tax documents) — workday.novatech.in
+  L2 Escalation: Payroll Team — payroll@novatech.in
+                 Ticket: support.novatech.in > HR > Payroll
+  L3 Escalation: Finance Operations — finance-ops@novatech.in
+  SLA L2:       3 business days
+  Notes:        Always include payslip month and specific discrepancy amount in ticket.
+                Payroll cut-off is 25th of each month.
+
+CATEGORY: Reimbursements & Expenses
+  L1 Owner:     Workday self-service — workday.novatech.in > Expenses
+  L2 Escalation: Finance Operations — finance-ops@novatech.in
+  SLA L2:       3 business days
+  Notes:        Claims must be submitted within 30 days of expense. Late claims (>30 days)
+                require Finance Head approval.
+
+CATEGORY: Workplace Grievances
+  L1 Owner:     grievance.novatech.in | grievance@novatech.in (anonymous supported)
+  L2 Escalation: HR Business Partner — hrbp@novatech.in
+  L3 Escalation: Grievance Committee (3-member panel) — constituted within 7 days
+  L4 Escalation: HR Director — hrdirector@novatech.in (binding decision)
+  L5 Escalation: External — State Labour Commissioner / Labour Court
+  SLA:          HRBP acknowledgement: 2 business days | HRBP resolution: 15 business days
+                Grievance Committee resolution: 30 business days
+  Notes:        Retaliation against grievance filers is a Code of Conduct violation.
+
+CATEGORY: Sexual Harassment (POSH)
+  Owner:        Internal Complaints Committee (ICC) — posh-icc@novatech.in
+  ICC Head:     Priya Nair, VP People Operations — priya.nair@novatech.in
+  External Member: Adv. Sunita Rao
+  SLA:          ICC inquiry completion: 90 days from complaint receipt
+  Notes:        POSH complaints must NOT be routed through general grievance portal.
+                File directly with ICC. Anonymous complaints accepted but limit investigation.
+                Interim relief (transfer, leave) available during investigation.
+
+CATEGORY: Onboarding & Offboarding
+  L1 Owner:     People Operations — peopleops@novatech.in
+  L2 Escalation: HR Business Partner — hrbp@novatech.in
+  Notes:        New joiners: Day 1 issues (laptop not ready, access not provisioned)
+                — contact IT Helpdesk AND People Operations simultaneously.
+                Resignation: Submit via Workday > Profile > Job > Resign.
+                F&F settlement within 45 days of last working day.
+
+CATEGORY: Ethics & Whistleblower
+  Owner:        Ethics Committee (chaired by CFO and Legal Counsel)
+  Contact:      ethics@novatech.in | Ethics Hotline: 1800-XXX-XXXX (24x7, anonymous)
+  SLA:          30 days for committee review
+  Notes:        For financial misconduct, fraud, data privacy violations, ethical breaches.
+                Whistleblowers protected from retaliation under Whistleblower Policy.
+
+================================================================================
+SECTION 3: KEY CONTACTS QUICK REFERENCE
+================================================================================
+
+IT Helpdesk (General):          helpdesk@novatech.in | support.novatech.in
+IT Helpdesk (Emergency 24x7):   +91-80-4567-8901
+IT Security (Incidents 24x7):   +91-80-4567-8902 | security@novatech.in
+CISO:                           ciso@novatech.in
+IT Manager:                     itmanager@novatech.in
+IT Network Team:                network@novatech.in
+IT Access Management:           iam@novatech.in
+
+HR Business Partner:            hrbp@novatech.in
+HR Director:                    hrdirector@novatech.in
+Payroll Team:                   payroll@novatech.in
+Finance Operations:             finance-ops@novatech.in
+People Operations:              peopleops@novatech.in
+Grievance Cell:                 grievance@novatech.in | grievance.novatech.in
+POSH ICC:                       posh-icc@novatech.in
+Ethics Hotline:                 ethics@novatech.in | 1800-XXX-XXXX
+
+================================================================================
+SECTION 4: IMPORTANT SYSTEM URLS
+================================================================================
+
+IT Support Portal:              support.novatech.in
+SSO & Password Reset:           sso.novatech.in / sso.novatech.in/reset
+HRMS (Workday):                 workday.novatech.in
+Software Catalogue:             software.novatech.in
+Grievance Portal:               grievance.novatech.in
+NovaTech Intranet:              intranet.novatech.in
+Learning Portal:                learn.novatech.in
+VPN Endpoint:                   vpn.novatech.in
+Asset Management:               ntams.novatech.in
+Access Request Form:            support.novatech.in/access-request
+
+— End of Escalation Matrix —
+NovaTech Solutions Pvt. Ltd. | GEN-ESC-001 | v3.0 | March 2026

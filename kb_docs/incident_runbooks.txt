@@ -1,0 +1,251 @@
+NOVATECH SOLUTIONS — IT INCIDENT RUNBOOKS
+Document ID: IT-RB-001 | Version 2.1 | Last Revised: March 2025
+Maintained by: IT Infrastructure Team | helpdesk@novatech.in
+
+These runbooks are used by the NovaTech L1 Support Engine (NTSE) and IT helpdesk agents
+to resolve common employee-reported incidents. Each runbook includes symptoms, root causes,
+step-by-step resolution, and escalation triggers.
+
+================================================================================
+RUNBOOK 001: VPN CONNECTION FAILURE
+Category: Network / Remote Access | Policy Reference: IT-004 | Severity: SEV-2
+================================================================================
+
+SYMPTOMS
+- Cisco AnyConnect shows "Connection attempt failed"
+- VPN connects but internal sites (intranet.novatech.in, Jira, Confluence) are unreachable
+- MFA OTP rejected despite correct code entry
+- VPN disconnects repeatedly within minutes of connecting
+
+COMMON ROOT CAUSES
+1. Incorrect server address entered (most common)
+2. MFA token clock drift — device time out of sync with server
+3. Wrong VPN profile selected (Standard vs Privileged)
+4. Corporate firewall blocking port 443 on employee's ISP
+5. Cisco AnyConnect client outdated or corrupted
+
+RESOLUTION STEPS
+
+Step 1 — Verify server address
+   Correct server: vpn.novatech.in
+   Protocol: SSL-TLS | Port: 443
+   If employee has entered anything else, correct it and retry.
+
+Step 2 — Re-sync MFA token
+   - Open Google Authenticator on the registered device
+   - Go to Settings > Time correction for codes > Sync now
+   - Retry VPN login with freshly generated OTP
+   - If using hardware token: call helpdesk for manual re-sync (+91-80-4567-8901)
+
+Step 3 — Verify correct profile
+   - NovaTech-Standard: for all regular employees
+   - NovaTech-Privileged: for admins only, requires separate approval (IT-ACC-REQ form)
+   - Disconnect, reconnect, select NovaTech-Standard explicitly
+
+Step 4 — Reinstall Cisco AnyConnect
+   - Download fresh installer from software.novatech.in
+   - Uninstall existing client via Control Panel
+   - Restart device, reinstall, retry
+
+Step 5 — Check ISP/network restrictions
+   - Test from a different network (mobile hotspot)
+   - If VPN works on hotspot but not home broadband, ISP is blocking port 443
+   - Employee should contact ISP or use mobile hotspot as workaround
+
+ESCALATION TRIGGERS
+- Escalate to SEV-1 if >10 employees report VPN failure simultaneously (potential server outage)
+- Escalate to network@novatech.in if Steps 1-4 fail
+- SLA: SEV-2 response within 2 hours
+
+================================================================================
+RUNBOOK 002: LAPTOP WILL NOT BOOT / BLACK SCREEN
+Category: Hardware | Policy Reference: IT-005 | Severity: SEV-2 to SEV-3
+================================================================================
+
+SYMPTOMS
+- Laptop powers on but screen remains black
+- Stuck on NovaTech logo / Windows loading screen
+- Blue Screen of Death (BSOD) on startup
+- Laptop does not power on at all
+
+RESOLUTION STEPS
+
+Step 1 — Basic power cycle
+   - Hold power button 10 seconds to force shutdown
+   - Remove power cable and (if removable) battery
+   - Wait 30 seconds, reconnect, power on
+   - If resolved: likely a one-time firmware hang, no further action needed
+
+Step 2 — External display test
+   - Connect laptop to external monitor via HDMI/DisplayPort
+   - If external display works, issue is with laptop screen hardware
+   - Raise hardware replacement request (IT-HW-REPLACE form at support.novatech.in)
+
+Step 3 — Windows Startup Repair
+   - Force shutdown 3 times during boot to trigger Windows Recovery Environment
+   - Select Troubleshoot > Advanced Options > Startup Repair
+   - Allow repair to complete, restart
+
+Step 4 — BSOD analysis
+   - Note the STOP code displayed (e.g. KERNEL_SECURITY_CHECK_FAILURE)
+   - Common codes and causes:
+     * DRIVER_IRQL_NOT_LESS_OR_EQUAL — recent driver update issue
+     * CRITICAL_PROCESS_DIED — OS file corruption
+     * MEMORY_MANAGEMENT — RAM fault (requires hardware replacement)
+   - Share STOP code with helpdesk for targeted resolution
+
+Step 5 — Hardware failure confirmation
+   - If none of the above resolves: raise SEV-2 ticket
+   - IT will provision a loaner device within 4 business hours while repair is assessed
+   - Replacement governed by IT-005 hardware policy
+
+ESCALATION TRIGGERS
+- Escalate immediately if employee has critical deliverable same day (loaner provisioning)
+- Physical damage visible: route to IT-HW-REPLACE with manager approval
+- Data recovery required: escalate to IT Security before any reimaging
+
+================================================================================
+RUNBOOK 003: MICROSOFT OUTLOOK / EMAIL NOT WORKING
+Category: Software | Policy Reference: IT-006 | Severity: SEV-3
+================================================================================
+
+SYMPTOMS
+- Outlook stuck on "Trying to connect..." or "Disconnected"
+- Emails not sending — stuck in Outbox
+- Cannot access Outlook Web App (outlook.office.com)
+- New emails not arriving, calendar not syncing
+
+RESOLUTION STEPS
+
+Step 1 — Check Microsoft 365 service status
+   - Visit status.office.com to check for active M365 outages
+   - If Microsoft reports an incident, no action needed — wait for resolution
+
+Step 2 — Outlook desktop — repair profile
+   - Close Outlook
+   - Open Control Panel > Mail > Email Accounts
+   - Select NovaTech account > Repair
+   - Restart Outlook
+
+Step 3 — Clear Outlook cache
+   - Close Outlook
+   - Press Win+R, type: %localappdata%\Microsoft\Outlook
+   - Delete all .ost files (offline cache — will rebuild on restart)
+   - Reopen Outlook and allow it to sync (may take 10-20 mins for large mailboxes)
+
+Step 4 — Test via Outlook Web App
+   - Navigate to outlook.office.com
+   - Log in with NovaTech SSO credentials
+   - If OWA works but desktop app does not: desktop client issue (proceed to Step 5)
+   - If OWA also fails: account or server issue, escalate to helpdesk
+
+Step 5 — Reinstall Microsoft 365
+   - Download M365 installer from software.novatech.in
+   - Uninstall existing Office via Settings > Apps
+   - Run fresh installer, sign in with NovaTech SSO
+
+ESCALATION TRIGGERS
+- Escalate if email is missing (potential data loss) — do not attempt local fixes
+- Escalate if employee cannot access email for >4 hours with business impact
+
+================================================================================
+RUNBOOK 004: PASSWORD / ACCOUNT LOCKOUT
+Category: Access Management | Policy Reference: IT-003 | Severity: SEV-3
+================================================================================
+
+SYMPTOMS
+- "Your account has been locked" message on Windows login or SSO
+- Password reset not working via self-service portal
+- MFA enrolled but OTP not accepted
+
+RESOLUTION STEPS
+
+Step 1 — Self-service password reset (preferred)
+   - Navigate to sso.novatech.in/reset from any device (mobile works)
+   - Enter registered email (firstname.lastname@novatech.in)
+   - Complete OTP verification via registered mobile number
+   - Set new password meeting complexity requirements:
+     * Minimum 12 characters
+     * 1 uppercase, 1 lowercase, 1 number, 1 special character
+     * Cannot reuse last 10 passwords
+
+Step 2 — Account unlock (if not locked due to password)
+   - Accounts auto-unlock after 30 minutes of inactivity post-lockout
+   - For immediate unlock: call helpdesk +91-80-4567-8901 with employee ID
+
+Step 3 — SSPR failure (mobile not registered)
+   - Employee must visit IT Help Desk in person
+   - Location: Floor 2, Block B, Bengaluru HQ
+   - Bring employee ID card for identity verification
+   - Remote employees: Video verification call with helpdesk (raise ticket first)
+
+Step 4 — MFA issues
+   - Lost MFA device: raise SEV-2 ticket immediately — security implications
+   - New device setup: helpdesk will initiate MFA re-enrollment after identity verification
+   - Hardware token malfunction: swap available at IT Help Desk
+
+ESCALATION TRIGGERS
+- Suspected account compromise (lockout without employee's knowledge): escalate to
+  security@novatech.in immediately — treat as SEV-1 security incident
+
+================================================================================
+RUNBOOK 005: SLACK NOT LOADING / MESSAGES NOT SENDING
+Category: Software | Policy Reference: IT-006 | Severity: SEV-4
+================================================================================
+
+SYMPTOMS
+- Slack shows "Connecting..." indefinitely
+- Messages sent but not delivered
+- Notifications not appearing
+- Slack app crashes on startup
+
+RESOLUTION STEPS
+
+Step 1 — Check Slack service status
+   - Visit status.slack.com for active incidents
+
+Step 2 — Clear Slack cache (desktop)
+   - Windows: Press Win+R, type %appdata%\Slack, delete Cache and Service Worker folders
+   - Mac: ~/Library/Application Support/Slack — delete Cache folder
+   - Restart Slack
+
+Step 3 — Reinstall Slack
+   - Download from software.novatech.in (do not use personal Slack account)
+   - Uninstall, restart device, reinstall
+   - Sign in via novatech-hq.slack.com with SSO credentials
+
+Step 4 — Use Slack Web as temporary workaround
+   - Navigate to novatech-hq.slack.com in browser
+   - Full functionality available while desktop app issue is resolved
+
+ESCALATION TRIGGERS
+- Escalate if entire team reports Slack issues simultaneously (network-level block)
+- Escalate if sensitive messages appear missing (potential data concern)
+
+================================================================================
+RUNBOOK 006: NEW SOFTWARE INSTALLATION REQUEST
+Category: Software | Policy Reference: IT-006 | Severity: SEV-4
+================================================================================
+
+APPROVED SOFTWARE (No ticket required)
+Employees may install the following directly from software.novatech.in:
+- Productivity: Microsoft 365, Google Chrome, Zoom, Notion
+- Development: VS Code, IntelliJ IDEA, PyCharm, Docker Desktop, Postman, Git
+- Data: DBeaver, Tableau Desktop, Power BI Desktop, Python via Conda
+- Security: Cisco AnyConnect, CrowdStrike Falcon, Bitwarden
+
+SOFTWARE REQUIRING APPROVAL (Raise IT-SWR ticket)
+- Any tool not in the approved catalogue
+- Open-source tools with GPL/AGPL licensing
+- AI/ML tools with data ingestion (local LLMs, Copilot variants)
+- Browser extensions beyond pre-approved list
+
+APPROVAL PROCESS
+1. Raise ticket at support.novatech.in — category: Software > Installation Request
+2. Include: software name, version, business justification, URL to download
+3. Standard approval: 3 business days
+4. Security-reviewed (AI tools, network tools): 7 business days
+5. Emergency (with manager sign-off): same day
+
+— End of Runbooks Document —
+NovaTech Solutions Pvt. Ltd. | IT-RB-001 | v2.1 | March 2026

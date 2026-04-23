@@ -1,0 +1,257 @@
+NOVATECH SOLUTIONS — NEW EMPLOYEE ONBOARDING GUIDE
+Document ID: HR-OB-001 | Version 3.1 | Last Revised: March 2025
+Maintained by: People Operations | peopleops@novatech.in
+
+This guide covers everything a new NovaTech employee needs from the offer acceptance
+stage through the first 90 days. It is also used by the NovaTech L1 Support Engine
+(NTSE) to answer onboarding-related queries from new joiners and their managers.
+
+================================================================================
+SECTION 1: PRE-JOINING (BEFORE DAY 1)
+================================================================================
+
+OFFER LETTER & DOCUMENTATION
+- Offer letter is sent via DocuSign to your personal email 5-7 days before joining date.
+- Sign and return digitally. Do not print and scan — DocuSign signatures are legally binding.
+- If you have not received your offer letter 3 days before joining, contact
+  peopleops@novatech.in immediately.
+
+BACKGROUND VERIFICATION
+- Background verification is conducted via AuthBridge portal.
+- Link is sent to your personal email within 24 hours of offer acceptance.
+- Verification covers: identity, education, previous employment (last 3 employers),
+  address, and criminal record check.
+- Verification must be completed before Day 1 — incomplete BGV may delay onboarding.
+- BGV typically takes 5-7 business days. You will receive a clearance confirmation email.
+- For queries on BGV status: bgv@novatech.in
+
+DOCUMENT SUBMISSION
+Submit the following via NovaTech Document Portal (link sent to personal email):
+- PAN card (mandatory for payroll setup)
+- Aadhaar card
+- Educational certificates (highest qualification + any certifications)
+- Previous employment documents: last 3 months payslips, experience letters,
+  relieving letter from most recent employer
+- Bank account details: account number, IFSC code, cancelled cheque or bank statement
+- Passport-size photograph (for employee ID card)
+- Address proof (Aadhaar acceptable)
+
+Failure to submit documents before Day 1 may delay salary processing for Month 1.
+Contact peopleops@novatech.in if you are unable to submit any document.
+
+DAY 1 WELCOME KIT EMAIL
+You will receive a Welcome Kit email 2 days before joining containing:
+- Office address and reporting instructions (report to People Operations at 9:30 AM)
+- Building access procedure for Day 1 (visitor pass at Front Desk)
+- Parking pass (if applicable — Bengaluru HQ only)
+- IT setup guide (what to expect for laptop provisioning)
+- Dress code reminder (business casual on Day 1 for induction; smart casual thereafter)
+- Emergency contact numbers for Day 1
+
+================================================================================
+SECTION 2: DAY 1 INDUCTION
+================================================================================
+
+REPORTING & ARRIVAL
+- Report to People Operations desk at 9:30 AM sharp on your joining date.
+- Carry original copies of all submitted documents for physical verification.
+- Collect employee ID card and building access card from Front Desk after HR check-in.
+- Parking sticker (if applicable) collected from Front Desk with employee ID card.
+
+IT SETUP (DAY 1 MORNING — conducted by IT Helpdesk)
+- Collect your provisioned laptop from IT Help Desk (Floor 2, Block B, Bengaluru HQ).
+- IT will walk you through:
+  * Initial Windows login and mandatory password change
+  * Cisco AnyConnect VPN setup (vpn.novatech.in)
+  * Microsoft 365 activation (Outlook, Teams, OneDrive)
+  * Slack workspace access (novatech-hq.slack.com)
+  * MFA enrollment (Google Authenticator or hardware token)
+  * CrowdStrike Falcon verification (must show active protection)
+- Do not attempt to set up software yourself before IT walkthrough.
+- If your laptop is not ready on Day 1, raise an urgent ticket via helpdesk@novatech.in
+  — loaner device will be provided within 2 hours.
+
+DAY 1 ACCESS PACKAGE (auto-provisioned)
+All new employees receive the following access on Day 1:
+- NovaTech SSO account (firstname.lastname@novatech.in)
+- Microsoft 365 (Outlook, Teams, SharePoint, OneDrive)
+- Slack workspace (novatech-hq.slack.com)
+- NovaTech Intranet (intranet.novatech.in)
+- Workday HRMS (workday.novatech.in) — for leave, payroll, expenses
+- Jira & Confluence — project-level access granted by team lead within 2 business days
+- GitHub Enterprise (github.novatech.in) — access granted by team lead
+
+Role-specific access (AWS console, database access, Salesforce, etc.) must be
+requested by your manager via IT-ACC-REQ form within your first week.
+
+MANDATORY E-LEARNING MODULES (complete by end of Week 1)
+The following modules must be completed on learn.novatech.in before end of first week:
+1. Code of Conduct & Ethics (45 minutes) — covers acceptable behaviour, conflicts of interest
+2. POSH Awareness Training (30 minutes) — mandatory under law
+3. IT Security Basics (60 minutes) — password hygiene, phishing awareness, data handling
+4. Data Privacy Fundamentals (45 minutes) — GDPR basics, data classification, handling rules
+5. Information Security Policy Acknowledgement (15 minutes) — sign-off required
+
+Failure to complete modules within 1 week triggers an automated reminder from People Ops.
+Modules not completed within 2 weeks are escalated to your reporting manager.
+
+TEAM INTRODUCTION
+- Your reporting manager will have your first 1:1 scheduled on Day 1 or Day 2.
+- A team introduction meeting is calendar-blocked by your manager in your first week.
+- You will be assigned a buddy (peer from your team) to help you navigate the first 30 days.
+  Buddy assignment is done by your manager before Day 1.
+
+================================================================================
+SECTION 3: FIRST 30 DAYS
+================================================================================
+
+WEEK 1 PRIORITIES
+- Complete IT setup and all mandatory e-learning modules
+- Set up Outlook, Teams, and Slack — ensure you can send and receive on all platforms
+- Meet your reporting manager for role briefing and initial goal-setting
+- Connect with your buddy for informal guidance on team processes and culture
+- Review this onboarding guide and the NovaTech Employee Handbook on intranet.novatech.in
+- Request any role-specific system access via IT-ACC-REQ (your manager will guide you)
+
+WEEK 2-4 PRIORITIES
+- Begin working on starter tasks assigned by your manager
+- Complete any pending document submissions
+- Attend team rituals (standups, sprint ceremonies, team meetings)
+- Schedule introductory 1:1s with key stakeholders your manager identifies
+- Raise any access blockers immediately via support.novatech.in — do not wait
+
+30-DAY CHECK-IN
+A formal 30-day check-in is conducted by your reporting manager. Topics covered:
+- Role clarity: are your responsibilities and goals clear?
+- Access and tools: do you have everything you need?
+- Initial feedback: how is the onboarding experience?
+- Blockers: anything preventing you from being effective?
+- Culture fit: how are you finding the team and environment?
+
+This is a two-way conversation — you are expected to give honest feedback.
+Document is filed with HR by your manager after the meeting.
+
+================================================================================
+SECTION 4: 30 TO 60 DAYS
+================================================================================
+
+MID-PROBATION REVIEW (DAY 60)
+Conducted by your HR Business Partner (HRBP), not your manager.
+Purpose: independent check on your experience, separate from manager feedback.
+Topics:
+- Performance and contribution so far
+- Culture and team integration
+- Any concerns you want to raise confidentially with HR
+- Wellbeing and workload check
+
+HRBP contact: hrbp@novatech.in
+You can also proactively reach out to your HRBP at any time during probation.
+
+WHAT YOU SHOULD HAVE DONE BY DAY 60
+- All mandatory e-learning completed (overdue by now if not done)
+- All system access set up and functional
+- First independent deliverable or contribution made
+- Probation goals clearly defined and agreed with manager in writing
+- Expense reimbursement account set up in Workday if applicable
+
+================================================================================
+SECTION 5: 60 TO 90 DAYS — PROBATION COMPLETION
+================================================================================
+
+PROBATION PERIOD OVERVIEW
+- Standard probation: 90 days for most roles (L1-L6)
+- Extended probation: 180 days for senior positions (L7 and above)
+- Probation can be extended by 30 days once with written justification from manager
+  and HR approval. Employee must be notified before probation end date.
+
+PROBATION COMPLETION REVIEW (DAY 90)
+Conducted jointly by reporting manager and HR Business Partner.
+Topics:
+- Performance against probation goals
+- Conduct and adherence to policies
+- Team feedback (manager may collect 2-3 peer inputs)
+- Confirmation decision
+
+CONFIRMATION OUTCOMES
+- Confirmed: Confirmation letter issued via Workday within 5 business days of review.
+  Salary revision (if applicable for confirmed employees) effective from Day 91.
+- Extended: Written communication with specific improvement areas and new review date.
+  Extension cannot exceed 30 days beyond original 90-day period.
+- Not confirmed (separation): Rare outcome. Governed by Employment Agreement terms.
+  Notice period during probation is 15 days (both sides).
+
+WHAT CHANGES AFTER CONFIRMATION
+- Full leave entitlements activate (some leave types are pro-rated during probation)
+- Eligible for internal transfer requests after 6 months post-confirmation
+- Performance appraisal cycle inclusion from next APR (April)
+- Eligible to nominate for L&D courses requiring confirmation status
+
+================================================================================
+SECTION 6: COMMON NEW JOINER QUESTIONS
+================================================================================
+
+Q: My laptop was not ready on Day 1. What do I do?
+A: Contact IT Helpdesk immediately at helpdesk@novatech.in or +91-80-4567-8901.
+   A loaner device will be provisioned within 2 hours. Raise a ticket at support.novatech.in
+   with category Hardware > New Joiner Laptop Not Provisioned.
+
+Q: I did not receive my SSO account credentials before Day 1.
+A: Your SSO account is created on your joining date by People Operations.
+   If not received by 10 AM on Day 1, contact peopleops@novatech.in or visit
+   the People Operations desk directly.
+
+Q: I cannot access Jira or Confluence.
+A: Jira and Confluence project-level access is granted by your team lead within
+   2 business days of joining. If not received by Day 3, ask your team lead to
+   submit an IT-ACC-REQ form at support.novatech.in/access-request.
+
+Q: My salary was not credited for my first month.
+A: First-month salary is processed in the regular payroll cycle (last working day of month).
+   If you joined after the 25th payroll cut-off, your first month salary is included
+   in the following month's payroll (you will receive 2 months salary together).
+   For queries: raise ticket at support.novatech.in > HR > Payroll or email payroll@novatech.in.
+
+Q: I submitted my documents but got an error on the portal.
+A: Email peopleops@novatech.in with the document attached directly.
+   Include your full name, employee ID (if already issued), and joining date.
+
+Q: I need to apply for leave during my probation period. Is that allowed?
+A: Yes. Leave entitlements apply from Day 1, though Casual Leave is not available
+   during the first 30 days of employment. Sick leave is available from Day 1.
+   Privileged Leave accrues from Day 1 but is subject to manager approval.
+   Apply via Workday at workday.novatech.in > Time Off > Request Time Off.
+
+Q: Who is my HR Business Partner?
+A: HRBP assignments are by business unit. Your manager will introduce you to your
+   HRBP at or before your Day 30 check-in. You can also email hrbp@novatech.in
+   to find out who is assigned to your team.
+
+Q: Can I work from home during my first month?
+A: Interns and Trainees: WFH only on Fridays, must be in office 4 days per week.
+   All other roles: standard WFH policy applies (Engineering: min 2 days in office).
+   However, managers may request new joiners to be in office more frequently during
+   the first 30 days for onboarding purposes. Follow your manager's guidance.
+
+Q: When does my health insurance coverage start?
+A: Group health insurance enrollment is completed by People Operations within your
+   first week. Coverage typically activates from your date of joining.
+   Insurance details and policy documents are available on intranet.novatech.in > Benefits.
+   For enrollment queries: benefits@novatech.in
+
+================================================================================
+SECTION 7: KEY CONTACTS FOR NEW JOINERS
+================================================================================
+
+People Operations (onboarding):     peopleops@novatech.in
+IT Helpdesk (Day 1 setup):          helpdesk@novatech.in | +91-80-4567-8901
+HR Business Partner:                hrbp@novatech.in
+Background Verification:            bgv@novatech.in
+Payroll (salary queries):           payroll@novatech.in
+Benefits (insurance, perks):        benefits@novatech.in
+Learning Portal:                    learn.novatech.in
+Employee Handbook:                  intranet.novatech.in > Policies > Employee Handbook
+IT Support Portal:                  support.novatech.in
+HRMS (Workday):                     workday.novatech.in
+
+— End of Onboarding Guide —
+NovaTech Solutions Pvt. Ltd. | HR-OB-001 | v3.1 | March 2026
