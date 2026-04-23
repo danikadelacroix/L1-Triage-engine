@@ -29,8 +29,8 @@ EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 # Larger overlap than original (200 → 400) so policy tables don't lose
 # their header row when they span a chunk boundary
-CHUNK_SIZE = 1200
-CHUNK_OVERLAP = 400
+CHUNK_SIZE = 1000
+CHUNK_OVERLAP = 200
 
 # ── Models ─────────────────────────────────────────────────────────────────────
 
